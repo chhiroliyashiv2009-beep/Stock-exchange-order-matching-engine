@@ -1,0 +1,7 @@
+# ninja log v7
+49	7313	8123754039061128	CMakeFiles/trader_terminal.dir/tools/trader_terminal.cpp.obj	e0a34b20da4444d4
+33	7336	8123754038905372	CMakeFiles/exchange.dir/src/exchange_main.cpp.obj	87f1039af946db34
+58	7352	8123754039166322	CMakeFiles/liquidity_bot.dir/tools/liquidity_bot.cpp.obj	4138994e3da308a0
+7337	7633	8123754111935452	src/exchange.exe	2df3c3e00e3a2161
+7352	7634	8123754112097797	tools/liquidity_bot.exe	396cb50c4d3e070f
+7319	7634	8123754111770299	tools/trader_terminal.exe	945a9f7429b5dfac
