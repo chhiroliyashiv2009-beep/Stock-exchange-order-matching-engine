@@ -1,0 +1,21 @@
+# Build directory
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Compiled binaries and objects
+*.exe
+*.o
+*.obj
+*.a
+*.lib
+
+# IDE & Editor files
+.vscode/
+.idea/
+
+# OS specific
+Thumbs.db
+[Dd]esktop.ini

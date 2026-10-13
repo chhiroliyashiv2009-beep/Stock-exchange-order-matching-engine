@@ -192,9 +192,3 @@ You can use `--gtest_filter` to run individual test suites:
 - **False Sharing Prevention**: Producer and consumer cursors in [`SPSCQueue`](src/core/scsc_queue.h) are separated by 128 bytes (`alignas(128)`), eliminating cross-core cache invalidation ping-pong.
 - **Fixed-Point Arithmetic**: Prices are scaled using fixed-point representation (`PRICE_SCALE = 10,000`, 4 decimal places) using 64-bit signed integers (`std::int64_t`), avoiding floating-point rounding errors and non-deterministic FPU latency.
 - **Branch Prediction**: Critical cold-path error branches (pool exhaustion, full queues) utilize C++20 `[[unlikely]]` attributes to prioritize instructions in CPU instruction caches.
-
----
-
-## License
-
-This project is licensed under the MIT License.
