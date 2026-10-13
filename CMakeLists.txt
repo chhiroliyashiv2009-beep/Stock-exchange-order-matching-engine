@@ -81,4 +81,45 @@ set_target_properties(
         RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/tools"
 )
 
+# --- Unit Testing with Google Test ---
+enable_testing()
+find_package(GTest REQUIRED)
+
+add_executable(
+    matching_engine_tests
+    tests/test_price_time_priority.cpp
+    tests/test_partial_fills_and_queue.cpp
+    tests/test_crossing_orders.cpp
+    tests/test_spsc_queue.cpp
+    tests/test_memory_pool.cpp
+    tests/test_matching_engine_pool_limits.cpp
+)
+
+target_link_libraries(
+    matching_engine_tests
+    PRIVATE
+        exchange_project
+        GTest::gtest
+        GTest::gtest_main
+)
+
+target_compile_options(
+    matching_engine_tests
+    PRIVATE
+        -fexceptions
+)
+
+set_target_properties(
+    matching_engine_tests
+    PROPERTIES
+        OUTPUT_NAME "matching_engine_tests"
+        RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/tests"
+)
+
+add_test(
+    NAME matching_engine_tests
+    COMMAND matching_engine_tests
+)
+
+
 

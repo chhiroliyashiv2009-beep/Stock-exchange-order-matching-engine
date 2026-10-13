@@ -28,7 +28,7 @@ namespace exchange::core
         public:
         MemoryPool():slots_(std::make_unique<Slot[]>(N)){ initialize_free_list(); }
         MemoryPool(const MemoryPool &)=delete;
-        MemoryPlool &operator=(const MemoryPool &)=delete;
+        MemoryPool &operator=(const MemoryPool &)=delete;
         MemoryPool(MemoryPool &&)=delete;
         MemoryPool &operator=(MemoryPool &&)=delete;
 
@@ -49,17 +49,38 @@ namespace exchange::core
             }
             std::destroy_at(object);
             auto *node=reinterpret_cast<FreeNode*>(object);
-            node->next=free_list_head_=node;
+            node->next=free_list_head_;
+            free_list_head_=node;
             --allocated_count_;
+        }
+
+        [[nodiscard]] std::size_t allocated_count() const noexcept {
+            return allocated_count_;
+        }
+
+        [[nodiscard]] std::size_t available_count() const noexcept {
+            return N - allocated_count_;
+        }
+
+        [[nodiscard]] static constexpr std::size_t capacity() noexcept {
+            return N;
+        }
+
+        [[nodiscard]] bool is_full() const noexcept {
+            return free_list_head_ == nullptr;
+        }
+
+        [[nodiscard]] bool is_empty() const noexcept {
+            return allocated_count_ == 0;
         }
 
         private:
         void initialize_free_list() noexcept{
-            free_list_head=nullptr;
+            free_list_head_=nullptr;
             for(std::size_t index=0;index<N;++index){
-                auto *node=reinterpret_cast<FreeNode*>(&slots_[index].storage.data());
+                auto *node=reinterpret_cast<FreeNode*>(slots_[index].storage.data());
                 node->next=free_list_head_;
-                free_list_head=node;
+                free_list_head_=node;
             }
         }
         private:

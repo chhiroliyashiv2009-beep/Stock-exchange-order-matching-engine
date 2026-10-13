@@ -1,20 +1,56 @@
 [
 {
-  "directory": "C:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/src -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\exchange.dir\\src\\exchange_main.cpp.obj -c C:\\Users\\chhir\\OneDrive\\Desktop\\STOCK_EXCHANGE\\src\\exchange_main.cpp",
-  "file": "C:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/src/exchange_main.cpp",
-  "output": "C:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/build/CMakeFiles/exchange.dir/src/exchange_main.cpp.obj"
+  "directory": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/chhir/Desktop/STOCK_EXCHANGE/src -std=c++20 -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\exchange.dir\\src\\exchange_main.cpp.obj -c C:\\Users\\chhir\\Desktop\\STOCK_EXCHANGE\\src\\exchange_main.cpp",
+  "file": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/src/exchange_main.cpp",
+  "output": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build/CMakeFiles/exchange.dir/src/exchange_main.cpp.obj"
 },
 {
-  "directory": "C:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/src -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\trader_terminal.dir\\tools\\trader_terminal.cpp.obj -c C:\\Users\\chhir\\OneDrive\\Desktop\\STOCK_EXCHANGE\\tools\\trader_terminal.cpp",
-  "file": "C:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/tools/trader_terminal.cpp",
-  "output": "C:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/build/CMakeFiles/trader_terminal.dir/tools/trader_terminal.cpp.obj"
+  "directory": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/chhir/Desktop/STOCK_EXCHANGE/src -std=c++20 -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\trader_terminal.dir\\tools\\trader_terminal.cpp.obj -c C:\\Users\\chhir\\Desktop\\STOCK_EXCHANGE\\tools\\trader_terminal.cpp",
+  "file": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/tools/trader_terminal.cpp",
+  "output": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build/CMakeFiles/trader_terminal.dir/tools/trader_terminal.cpp.obj"
 },
 {
-  "directory": "C:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/src -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\liquidity_bot.dir\\tools\\liquidity_bot.cpp.obj -c C:\\Users\\chhir\\OneDrive\\Desktop\\STOCK_EXCHANGE\\tools\\liquidity_bot.cpp",
-  "file": "C:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/tools/liquidity_bot.cpp",
-  "output": "C:/Users/chhir/OneDrive/Desktop/STOCK_EXCHANGE/build/CMakeFiles/liquidity_bot.dir/tools/liquidity_bot.cpp.obj"
+  "directory": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/chhir/Desktop/STOCK_EXCHANGE/src -std=c++20 -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\liquidity_bot.dir\\tools\\liquidity_bot.cpp.obj -c C:\\Users\\chhir\\Desktop\\STOCK_EXCHANGE\\tools\\liquidity_bot.cpp",
+  "file": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/tools/liquidity_bot.cpp",
+  "output": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build/CMakeFiles/liquidity_bot.dir/tools/liquidity_bot.cpp.obj"
+},
+{
+  "directory": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -IC:/Users/chhir/Desktop/STOCK_EXCHANGE/src -std=c++20 -fexceptions -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\matching_engine_tests.dir\\tests\\test_price_time_priority.cpp.obj -c C:\\Users\\chhir\\Desktop\\STOCK_EXCHANGE\\tests\\test_price_time_priority.cpp",
+  "file": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/tests/test_price_time_priority.cpp",
+  "output": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build/CMakeFiles/matching_engine_tests.dir/tests/test_price_time_priority.cpp.obj"
+},
+{
+  "directory": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -IC:/Users/chhir/Desktop/STOCK_EXCHANGE/src -std=c++20 -fexceptions -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\matching_engine_tests.dir\\tests\\test_partial_fills_and_queue.cpp.obj -c C:\\Users\\chhir\\Desktop\\STOCK_EXCHANGE\\tests\\test_partial_fills_and_queue.cpp",
+  "file": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/tests/test_partial_fills_and_queue.cpp",
+  "output": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build/CMakeFiles/matching_engine_tests.dir/tests/test_partial_fills_and_queue.cpp.obj"
+},
+{
+  "directory": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -IC:/Users/chhir/Desktop/STOCK_EXCHANGE/src -std=c++20 -fexceptions -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\matching_engine_tests.dir\\tests\\test_crossing_orders.cpp.obj -c C:\\Users\\chhir\\Desktop\\STOCK_EXCHANGE\\tests\\test_crossing_orders.cpp",
+  "file": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/tests/test_crossing_orders.cpp",
+  "output": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build/CMakeFiles/matching_engine_tests.dir/tests/test_crossing_orders.cpp.obj"
+},
+{
+  "directory": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -IC:/Users/chhir/Desktop/STOCK_EXCHANGE/src -std=c++20 -fexceptions -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\matching_engine_tests.dir\\tests\\test_spsc_queue.cpp.obj -c C:\\Users\\chhir\\Desktop\\STOCK_EXCHANGE\\tests\\test_spsc_queue.cpp",
+  "file": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/tests/test_spsc_queue.cpp",
+  "output": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build/CMakeFiles/matching_engine_tests.dir/tests/test_spsc_queue.cpp.obj"
+},
+{
+  "directory": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -IC:/Users/chhir/Desktop/STOCK_EXCHANGE/src -std=c++20 -fexceptions -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\matching_engine_tests.dir\\tests\\test_memory_pool.cpp.obj -c C:\\Users\\chhir\\Desktop\\STOCK_EXCHANGE\\tests\\test_memory_pool.cpp",
+  "file": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/tests/test_memory_pool.cpp",
+  "output": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build/CMakeFiles/matching_engine_tests.dir/tests/test_memory_pool.cpp.obj"
+},
+{
+  "directory": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -IC:/Users/chhir/Desktop/STOCK_EXCHANGE/src -std=c++20 -fexceptions -Wall -Wextra -Wpedantic -fno-exceptions -o CMakeFiles\\matching_engine_tests.dir\\tests\\test_matching_engine_pool_limits.cpp.obj -c C:\\Users\\chhir\\Desktop\\STOCK_EXCHANGE\\tests\\test_matching_engine_pool_limits.cpp",
+  "file": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/tests/test_matching_engine_pool_limits.cpp",
+  "output": "C:/Users/chhir/Desktop/STOCK_EXCHANGE/build/CMakeFiles/matching_engine_tests.dir/tests/test_matching_engine_pool_limits.cpp.obj"
 }
 ]

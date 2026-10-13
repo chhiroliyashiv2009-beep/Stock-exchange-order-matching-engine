@@ -7,14 +7,14 @@
 
 # =============================================================================
 # Project: exchange
-# Configurations: Release
+# Configurations: 
 # =============================================================================
 # =============================================================================
 
 #############################################
 # Rule for generating CXX dependencies.
 
-rule CXX_SCAN__exchange_Release
+rule CXX_SCAN__exchange_
   depfile = $DEP_FILE
   command = C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
   description = Scanning $in for CXX dependencies
@@ -23,7 +23,7 @@ rule CXX_SCAN__exchange_Release
 #############################################
 # Rule to generate ninja dyndep files for CXX.
 
-rule CXX_DYNDEP__exchange_Release
+rule CXX_DYNDEP__exchange_
   command = C:\msys64\ucrt64\bin\cmake.exe -E cmake_ninja_dyndep --tdi=CMakeFiles\exchange.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
@@ -34,7 +34,7 @@ rule CXX_DYNDEP__exchange_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__exchange_scanned_Release
+rule CXX_COMPILER__exchange_scanned_
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
@@ -44,7 +44,7 @@ rule CXX_COMPILER__exchange_scanned_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__exchange_unscanned_Release
+rule CXX_COMPILER__exchange_unscanned_
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -54,7 +54,7 @@ rule CXX_COMPILER__exchange_unscanned_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__exchange_Release
+rule CXX_EXECUTABLE_LINKER__exchange_
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -63,7 +63,7 @@ rule CXX_EXECUTABLE_LINKER__exchange_Release
 #############################################
 # Rule for generating CXX dependencies.
 
-rule CXX_SCAN__trader_terminal_Release
+rule CXX_SCAN__trader_terminal_
   depfile = $DEP_FILE
   command = C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
   description = Scanning $in for CXX dependencies
@@ -72,7 +72,7 @@ rule CXX_SCAN__trader_terminal_Release
 #############################################
 # Rule to generate ninja dyndep files for CXX.
 
-rule CXX_DYNDEP__trader_terminal_Release
+rule CXX_DYNDEP__trader_terminal_
   command = C:\msys64\ucrt64\bin\cmake.exe -E cmake_ninja_dyndep --tdi=CMakeFiles\trader_terminal.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
@@ -83,7 +83,7 @@ rule CXX_DYNDEP__trader_terminal_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__trader_terminal_scanned_Release
+rule CXX_COMPILER__trader_terminal_scanned_
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
@@ -93,7 +93,7 @@ rule CXX_COMPILER__trader_terminal_scanned_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__trader_terminal_unscanned_Release
+rule CXX_COMPILER__trader_terminal_unscanned_
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -103,7 +103,7 @@ rule CXX_COMPILER__trader_terminal_unscanned_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__trader_terminal_Release
+rule CXX_EXECUTABLE_LINKER__trader_terminal_
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -112,7 +112,7 @@ rule CXX_EXECUTABLE_LINKER__trader_terminal_Release
 #############################################
 # Rule for generating CXX dependencies.
 
-rule CXX_SCAN__liquidity_bot_Release
+rule CXX_SCAN__liquidity_bot_
   depfile = $DEP_FILE
   command = C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
   description = Scanning $in for CXX dependencies
@@ -121,7 +121,7 @@ rule CXX_SCAN__liquidity_bot_Release
 #############################################
 # Rule to generate ninja dyndep files for CXX.
 
-rule CXX_DYNDEP__liquidity_bot_Release
+rule CXX_DYNDEP__liquidity_bot_
   command = C:\msys64\ucrt64\bin\cmake.exe -E cmake_ninja_dyndep --tdi=CMakeFiles\liquidity_bot.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
@@ -132,7 +132,7 @@ rule CXX_DYNDEP__liquidity_bot_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__liquidity_bot_scanned_Release
+rule CXX_COMPILER__liquidity_bot_scanned_
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
@@ -142,7 +142,7 @@ rule CXX_COMPILER__liquidity_bot_scanned_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__liquidity_bot_unscanned_Release
+rule CXX_COMPILER__liquidity_bot_unscanned_
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -152,7 +152,56 @@ rule CXX_COMPILER__liquidity_bot_unscanned_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__liquidity_bot_Release
+rule CXX_EXECUTABLE_LINKER__liquidity_bot_
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for generating CXX dependencies.
+
+rule CXX_SCAN__matching_engine_tests_
+  depfile = $DEP_FILE
+  command = C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
+  description = Scanning $in for CXX dependencies
+
+
+#############################################
+# Rule to generate ninja dyndep files for CXX.
+
+rule CXX_DYNDEP__matching_engine_tests_
+  command = C:\msys64\ucrt64\bin\cmake.exe -E cmake_ninja_dyndep --tdi=CMakeFiles\matching_engine_tests.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  description = Generating CXX dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+  restat = 1
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__matching_engine_tests_scanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__matching_engine_tests_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__matching_engine_tests_
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -170,7 +219,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\Users\chhir\OneDrive\Desktop\STOCK_EXCHANGE -BC:\Users\chhir\OneDrive\Desktop\STOCK_EXCHANGE\build
+  command = C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\Users\chhir\Desktop\STOCK_EXCHANGE -BC:\Users\chhir\Desktop\STOCK_EXCHANGE\build
   description = Re-running CMake...
   generator = 1
 

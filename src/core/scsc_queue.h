@@ -51,6 +51,22 @@ public:
            tail_.value.load(std::memory_order_acquire);
   }
 
+  [[nodiscard]] static constexpr std::size_t capacity() noexcept {
+    return N;
+  }
+
+  [[nodiscard]] std::size_t size() const noexcept {
+    const std::uint64_t head = head_.value.load(std::memory_order_relaxed);
+    const std::uint64_t tail = tail_.value.load(std::memory_order_relaxed);
+    return tail >= head ? static_cast<std::size_t>(tail - head) : 0U;
+  }
+
+  [[nodiscard]] bool full() const noexcept {
+    const std::uint64_t head = head_.value.load(std::memory_order_acquire);
+    const std::uint64_t tail = tail_.value.load(std::memory_order_acquire);
+    return (tail - head) == N;
+  }
+
 private:
   static constexpr std::size_t MASK = N - 1U;
 
